@@ -1,0 +1,40 @@
+{
+    "name": "pg_themis",
+    "abstract": "extension for encrypting/decrypting data using the Themis library",
+    "version": "1.0.0",
+    "maintainer": "Cossacklabs <dev@cossacklabs.com>",
+    "license": "Apache 2.0",
+
+    "prereqs": {
+        "runtime": {
+            "requires": {
+                "PostgreSQL": "9.1.0"
+            }
+        }
+    },
+    "provides": {
+        "pg_themis": {
+            "file": "pg_themis--1.0.0.sql",
+            "version": "1.0.0",
+            "abstract": "extension for encrypting/decrypting data using the Themis library"
+        }
+    },
+    "resources": {
+        "bugtracker": {
+            "web": "https://github.com/cossacklabs/pg_themis/issues"
+        },
+        "repository": {
+            "url": "git://github.com/cossacklabs/pg_themis.git" ,
+            "web": "https://github.com/cossacklabs/pg_themis",
+            "type": "git"
+        }
+    },    
+    "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+    },
+    "tags": [
+        "crypto",
+        "themis"
+    ]
+}
